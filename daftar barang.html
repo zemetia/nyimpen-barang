@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Daftar Barang Yoel</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script src="./index.js"></script>
+    </head>
+
+    
+    <style>
+        #view-data{
+            text-align: center; 
+            padding: 2px;
+            margin: 2px;
+            border-radius: 4px;
+            box-shadow: 5px 10px 18px #888888;
+        }
+    </style>
+    <body>
+        <div class="container">
+            Lihat Berdasarkan:
+            <select id="lihat-dari" onchange="tampilkanBarang()">
+                <option value="0">Semua</option>
+                <option value="Peralatan Makan">Peralatan Makan</option>
+                <option value="Aksesoris">Aksesoris</option>
+                <option value="Alat Musik">Alat Musik</option>
+                <option value="Peralatan">Peralatan</option>
+                <option value="Pakaian">Pakaian</option>
+                <option value="Elektronik">Elektronik</option>
+                <option value="Alat Tulis">Alat Tulis</option>
+                <option value="Dokumen/Buku">Dokumen/Buku</option>
+                <option value="Belum diKategorikan">Belum diKategorikan</option>
+            </select>
+        </div>
+        <div class="data-box container">
+            <table id="view-data" class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>Nama Barang</td>
+                        <td>Kategori</td>
+                        <td>Jumlah</td>
+                        <td>Edit Data</td>
+                    </tr>
+                </thead>
+                <tbody id="isi" >
+                </tbody>
+            </table>
+        </div><br />
+        <div class="tambah-barang container">
+            <input type="text" id="nama-barang"></input>
+            <select id="type-barang">
+                <option value="Peralatan Makan">Peralatan Makan</option>
+                <option value="Aksesoris">Aksesoris</option>
+                <option value="Alat Musik">Alat Musik</option>
+                <option value="Peralatan">Peralatan</option>
+                <option value="Pakaian">Pakaian</option>
+                <option value="Elektronik">Elektronik</option>
+                <option value="Alat Tulis">Alat Tulis</option>
+                <option value="Dokumen/Buku">Dokumen/Buku</option>
+                <option value="Belum diKategorikan">Belum diKategorikan</option>
+            </select>
+            <input type="number" min="1" max="100" id="jumlah-barang"></input>
+            <button id="tambah-barang" class="btn btn-outline-success btn-lg" onclick="tambahBarangDariForm();" style="display: inline;">Tambahkan</button>
+            <div id="edit-form" style="display: none;">
+                <button id="edit-barang" data="2" class="btn btn-outline-warning btn-lg" onclick="editBarangDariForm(Number(this.getAttribute('data')));" >Simpan Edit</button>
+                <button class="btn btn-outline-danger btn-lg" onclick="batalEdit()">X</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        let dataTable = document.getElementById("isi");
+        let namaBarang = document.getElementById("nama-barang");
+        let typeBarang = document.getElementById("type-barang");
+        let jmlhBarang = document.getElementById("jumlah-barang");
+        let tmbhBarang = document.getElementById("tambah-barang");
+        let editBarang = document.getElementById("edit-barang");
+        let lihatDari = document.getElementById("lihat-dari");
+        let editForm = document.getElementById("edit-form");
+    </script>
+</html>
