@@ -32,6 +32,6 @@ tampilkanBarang()
 ```
 
 # fiture
-u can search by category (or type), \n
-u can add new stuff, and u can edit your data \n
+u can search by category (or type), 
+u can add new stuff, and u can edit your data 
 moga bermanfaat yo gaes
