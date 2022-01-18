@@ -11,3 +11,23 @@ Javascript.
 Wes iku wae mass:v
 
 this program created just 1 hour hahahaha.. very simple but usefull:v
+berhubungan ini cuman project kecil jadi ga make inggris wkwkwk
+
+
+//function in javascript
+```js
+exportDataDariStorage()
+//exporting data from localStorage
+//untuk jaga jaga manatau data ilang.
+
+importDataKeStorage()
+//importing data (JSON)
+
+tambahBarang(name, type, amount)
+//make new data
+
+tampilkanBarang()
+//showing the our good's datas on the table cuk
+
+
+```
