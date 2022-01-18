@@ -29,5 +29,9 @@ tambahBarang(name, type, amount)
 tampilkanBarang()
 //showing the our good's datas on the table cuk
 
-
 ```
+
+# fiture
+u can search by category (or type),
+u can add new stuff, and u can edit your data
+moga bermanfaat yo gaes
