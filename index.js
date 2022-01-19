@@ -24,6 +24,7 @@ function viewEditBarang(index){
     tmbhBarang.style.display = "none";
     editForm.style.display = "inline";
     editBarang.setAttribute("data", index);
+    hapusBarang.setAttribute("data", index);
 }
 
 function tampilkanBarang(){
@@ -63,13 +64,40 @@ function editBarangDariForm(index){
     editForm.style.display = "none";
 }
 
-function batalEdit(){
+function hapusData(index, cnfrm){
+    if(!cnfrm)
+        alert("Data Tidak diHapus!")
+    else {
+        dataBarang.splice(index,1);
+        alert("Data pada index ke-"+index+" sudah terhapus!");
+    }
+
     hapusIsiForm();
-    
+    tampilkanBarang();
     tmbhBarang.style.display = "inline";
     editForm.style.display = "none";
 }
 
+function sortDataBarang(sortBy = "barang"){
+    dataBarang.sort((dataA,dataB) => {
+        if(dataA[sortBy] > dataB[sortBy])
+            return 1;
+        else if(dataA[sortBy] < dataB[sortBy])
+            return -1;
+        else if(dataA[sortBy] == dataB[sortBy])
+            return 0;
+    });
+    localStorage.setItem("barang", JSON.stringify(dataBarang));
+
+    tampilkanBarang();
+}
+
+//sementara doang
+function jalankanCodeTerminal(code){
+    var returnedData = eval(code);
+    logTerminal.innerHTML += returnedData + "<br>";
+
+}
 window.addEventListener('DOMContentLoaded', (event) => {
     tampilkanBarang();
 });
