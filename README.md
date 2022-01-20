@@ -38,3 +38,6 @@ tampilkanBarang()
 u can search by category (or type), 
 u can add new stuff, and u can edit your data 
 moga bermanfaat yo gaes
+
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/27951856/150277468-01146e8f-23c8-4942-881d-a55e8f854a7c.png">
+
