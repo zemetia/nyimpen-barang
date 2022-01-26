@@ -1,5 +1,5 @@
 # nyimpen-barang
-this is simple web that can run locally without any back-end
+this is simple web that can run locally without any back-end.
 very usefull for "anak rantau".. maybe u want to check your stuff
 
 
