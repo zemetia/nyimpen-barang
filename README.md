@@ -39,5 +39,9 @@ u can search by category (or type),
 u can add new stuff, and u can edit your data 
 moga bermanfaat yo gaes
 
+# v.2
 <img width="919" alt="image" src="https://user-images.githubusercontent.com/27951856/150277468-01146e8f-23c8-4942-881d-a55e8f854a7c.png">
+
+# v.4
+<img width="948" alt="image" src="https://user-images.githubusercontent.com/27951856/151148553-9cdea087-96e4-4151-8f40-cdf19db200a3.png">
 
